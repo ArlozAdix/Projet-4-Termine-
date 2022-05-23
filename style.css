@@ -775,7 +775,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #eeb79e!important;
 }
 
 .btn-atomic-tangerine {
@@ -824,6 +824,17 @@ h4 {
 .bg-presentation {
     background-image: url("img/AVIF/image-de-presentation.avif");
 }
+
+.citation{
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.citation__name{
+    font-size: 18px;
+}
+
 
 @media (max-width: 1024px) {
     .bloc {
