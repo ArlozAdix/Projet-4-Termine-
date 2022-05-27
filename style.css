@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -651,7 +651,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #000000!important;
 }
 
 .container {
@@ -736,7 +736,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .portfolio-thumb {
@@ -775,17 +775,21 @@ h4 {
 }
 
 .tc-white {
-    color: #eeb79e!important;
+    color: #ffffff!important;
+}
+
+.tc-black{
+    color: black;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .ltc-white {
@@ -810,7 +814,7 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/AVIF/dots-bg.avif");
+    background-image: url("img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
@@ -818,11 +822,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/AVIF/agence-la-panthere.avif");
+    background-image: url("img/agence-la-panthere.avif");
 }
 
 .bg-presentation {
-    background-image: url("img/AVIF/image-de-presentation.avif");
+    background-image: url("img/image-de-presentation.avif");
 }
 
 .citation{
@@ -833,6 +837,11 @@ h4 {
 
 .citation__name{
     font-size: 18px;
+}
+
+.gap_social{
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -859,13 +868,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -883,10 +892,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -895,8 +900,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
