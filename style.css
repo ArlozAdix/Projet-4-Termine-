@@ -1054,3 +1054,10 @@ h4 {
         text-align: center;
     }
 }
+
+.taille{
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
